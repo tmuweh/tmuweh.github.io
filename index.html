@@ -156,7 +156,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
         </div>
         <div class="copy-w3layouts-right text-center pb-3">
-            <p>© 2019 Unrivaled. All rights reserved | Design by
+            <p>© <span id="year"></span> Unrivaled. All rights reserved | Design by
                 <a href="http://w3layouts.com"> W3layouts.</a>
             </p>
 
@@ -166,5 +166,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
 
 </body>
+    <script>
+      document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
 
 </html>
